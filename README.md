@@ -30,7 +30,7 @@ network:
 ```
 sudo netplan apply
 ```
-**baixando imagem docker**  \
+**Baixando imagem docker**  \
 docker pull ubuntu 
 
 **Executando imagem docker**  \
