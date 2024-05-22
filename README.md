@@ -26,7 +26,7 @@ network:
         addresses:
           - 8.8.8.8
           - 8.8.4.4
-```  \
+```
 ```
 sudo netplan apply
 ```
