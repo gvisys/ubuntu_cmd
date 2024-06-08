@@ -62,3 +62,16 @@ How to fix Anydesk display_server_not_supported error on Linux:
 5. Uncomment the two lines " AutomaticLoginEnable = true " & " AutomaticLogin = $USERNAME " 
 6. Save the document and restart your Linux machine.
 ```
+
+### ALTERAR O HOSTNAME DO SERVIDOR 
+Siga o procedimento abaixo \
+Basta você alterar o hostname em dois arquivos – /etc/hostname e /etc/hosts. 
+
+```
+sudo nano /etc/hostname
+```
+Em seguida, vamos atualizar o registro hostname com o novo arquivo /etc/hosts para que o sistema defina o novo hostname na rede.
+```
+sudo nano /etc/hosts
+```
+
