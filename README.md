@@ -74,4 +74,18 @@ Em seguida, vamos atualizar o registro hostname com o novo arquivo /etc/hosts pa
 ```
 sudo nano /etc/hosts
 ```
+Para completar as formalidades, edite o arquivo de configuração cloud e mude o valor de preserve_hostname para true
+```
+nano /etc/cloud/cloud.cfg
+```
+<pre><b>…</b>
 
+<b>…</b>
+
+<b># This will cause the set+update hostname module to not operate (if true)</b>
+
+<b>preserve_hostname: true</b>
+
+<b>…</b>
+
+<b>…</b></pre>
