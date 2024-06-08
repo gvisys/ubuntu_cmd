@@ -50,3 +50,15 @@ docker exec -it ubuntu /bin/bash
 **Entrando na imagem docker** \
 docker run -it ubuntu
 
+
+**Arrumando a resolução do anydesk.** \
+
+```
+How to fix Anydesk display_server_not_supported error on Linux: 
+1. Open terminal on Linux by pressing "Ctrl + Alt + T" 
+2. Type " sudo gedit /etc/gdm3/custom.conf " 
+3. Uncomment the line " WaylandEnable=false " 
+4. Change the line " AutomaticLogin = user1 " to " AutomaticLogin = $USERNAME
+5. Uncomment the two lines " AutomaticLoginEnable = true " & " AutomaticLogin = $USERNAME " 
+6. Save the document and restart your Linux machine.
+```
