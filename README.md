@@ -89,3 +89,5 @@ nano /etc/cloud/cloud.cfg
 <b>…</b>
 
 <b>…</b></pre>
+
+xrdp, xorgxrdp e freexrdp2-x11
