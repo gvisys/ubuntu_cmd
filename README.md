@@ -91,3 +91,10 @@ nano /etc/cloud/cloud.cfg
 <b>…</b></pre>
 
 xrdp, xorgxrdp e freexrdp2-x11
+
+#### PARA CORRIGIR ERROS DE ACESSO VIA SSH DE CHAVE
+
+```
+sudo nano ~/.ssh/known_hosts
+```
+
