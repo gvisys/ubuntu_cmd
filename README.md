@@ -97,4 +97,29 @@ xrdp, xorgxrdp e freexrdp2-x11
 ```
 sudo nano ~/.ssh/known_hosts
 ```
+### PARA CONFIGURAR UMA BRIDGE ENTRE DUAS PORTAS DE REDE
+Utilize o seguinte procedimento abaixo: \
+Edite o arquivo localizado na pasta /etc/network
+```
+sudo nano /etc/network/interfaces
+```
+Substitua o conteudo pelo scrit abaixo. \
+N~ao esqueça de fazer um backup antes de fazer alguma alteração.
+```
+# interfaces(5) file used by ifup(8) and ifdown(8)
 
+# Please note that this file is written to be used with dhcpcd
+# For static IP, consult /etc/dhcpcd.conf and 'man dhcpcd.conf'
+
+# allow-hotplug eth0
+# allow-hotplug eth1
+
+# Include files from /etc/network/interfaces.d:
+# source-directory /etc/network/interfaces.d
+auto br0
+     iface br0 inet static
+         address 192.168.15.100
+         network 192.168.15.0
+         netmask 255.255.255.0
+         broadcast 192.168.15.255
+```
