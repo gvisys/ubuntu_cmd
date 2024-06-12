@@ -104,7 +104,7 @@ Edite o arquivo localizado na pasta /etc/network
 sudo nano /etc/network/interfaces
 ```
 Substitua o conteudo pelo scrit abaixo. \
-N~ao esqueça de fazer um backup antes de fazer alguma alteração.
+Não esqueça de fazer um backup antes de fazer alguma alteração.
 ```
 # interfaces(5) file used by ifup(8) and ifdown(8)
 
