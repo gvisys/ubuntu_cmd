@@ -123,3 +123,7 @@ auto br0
          netmask 255.255.255.0
          broadcast 192.168.15.255
 ```
+
+Execute o ```ifdown -a ``` (para desativar as interfaces antigas.
+
+Execute o ```ifup br0``` para levantar as interface br0. O sistema poder demorar um pouco para levantar a bridge (as vezes até 40 segundos) mas isto é normal.
